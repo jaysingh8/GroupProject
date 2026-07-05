@@ -1,1 +1,8 @@
-{}
+{
+  "rewrites": [
+    { "source": "/upcoming.html", "destination": "/html/upcoming.html" },
+    { "source": "/contact.html", "destination": "/html/contact.html" },
+    { "source": "/gallery.html", "destination": "/html/gallery.html" },
+    { "source": "/register.html", "destination": "/html/register.html" }
+  ]
+}
