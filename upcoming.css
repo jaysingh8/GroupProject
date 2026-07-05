@@ -103,7 +103,7 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
     transition: opacity .25s, transform .25s;
 }
-.eventCard .hidden{
+.eventCard.hidden{
     display: none;
 }
 .eventIcon{
