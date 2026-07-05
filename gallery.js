@@ -2,14 +2,17 @@
 // Each image is just an object with a src, alt text, and category.
 
 var images = [
-    { src: "https://picsum.photos/id/1011/400/300", alt: "Rhythm Night concert", category: "cultural" },
-    { src: "https://picsum.photos/id/1012/400/300", alt: "Sports Day team", category: "sports" },
-    { src: "https://picsum.photos/id/1013/400/300", alt: "Sports Day huddle", category: "sports" },
-    { src: "https://picsum.photos/id/1015/400/300", alt: "Crowd at concert", category: "cultural" },
-    { src: "https://picsum.photos/id/1016/400/300", alt: "Art exhibition visitors", category: "technical" },
-    { src: "https://picsum.photos/id/1018/400/300", alt: "Stage performance", category: "cultural" },
-    { src: "https://picsum.photos/id/1019/400/300", alt: "Code Warriors coding event", category: "technical" },
-    { src: "https://picsum.photos/id/1020/400/300", alt: "Sports Day trophy", category: "sports" }
+    { src: "public/cultural2.jpeg", alt: "Rhythm Night concert", category: "cultural" },
+    { src: "public/sports4.jpeg", alt: "Sports Day team", category: "sports" },
+    { src: "public/sports3.jpeg", alt: "Sports Day huddle", category: "sports" },
+    { src: "public/cultural4.jpeg", alt: "Crowd at concert", category: "cultural" },
+    { src: "public/tech1.webp", alt: "Art exhibition visitors", category: "technical" },
+    { src: "public/cultural.jpeg", alt: "Stage performance", category: "cultural" },
+    { src: "public/tech2.webp", alt: "Code Warriors coding event", category: "technical" },
+    { src: "public/sports1.jpeg", alt: "Sports Day trophy", category: "sports" },
+    { src: "public/sports2.jpeg", alt: "Sports Day trophy", category: "sports" },
+    { src: "public/cultural3.jpeg", alt: "Stage performance", category: "cultural" },
+
 ];
 
 var currentCategory = "all";
