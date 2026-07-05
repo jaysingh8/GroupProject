@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPCOMING Event</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="upcoming.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar container">
+            <div class="logo">
+                <i class="fa-solid fa-gothic-node"></i> CAMPUSFEST
+            </div>
+
+           
+            <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="mobileNav">
+                <ul class="nav-links">
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="#" class="active">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="register.html" >Register</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Dark background shown behind the mobile menu, closes it when tapped -->
+    <div class="navOverlay" id="navOverlay"></div>
+    <div class="eventHeading">
+        <h1>Events</h1>
+        <div class="underline"></div>
+        <p>Explore existing events and showcase your talent.</p>
+    </div>
+
+    <div class="filter">
+        <div class="searchBar">
+            <input type="text" id="eventSearchInput" placeholder="search events...">
+            <button type="button" class="clearBtn" id="clearSearchBtn" title="Clear">&times;</button>
+            <button type="button" id="searchBtn">Search</button>
+        </div>
+        <div class="filterBar">
+            <select id="categoryFilter">
+                <option value="">All Events</option>
+                <option value="tech">Tech</option>
+                <option value="sports">Sports</option>
+                <option value="music">Music</option>
+                <option value="art">Art</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="eventsWrap" id="eventsWrap">
+        <div class="eventCard" data-category="tech" data-name="code warriors coding competition">
+            <div class="eventIcon">&lt;/&gt;</div>
+            <div class="eventInfo">
+                <h3>Code Warriors</h3>
+                <p class="sub">Coding Competition</p>
+                <p class="desc">Show your coding skills and solve real-world problems.</p>
+            </div>
+            <div class="eventMeta">
+                <div>20 May, 2024</div>
+                <div>Main Auditorium</div>
+            </div>
+            <button class="viewBtn">View Details</button>
+        </div>
+
+        <div class="eventCard" data-category="music" data-name="rhythm night music concert">
+            <div class="eventIcon">🎵</div>
+            <div class="eventInfo">
+                <h3>Rhythm Night</h3>
+                <p class="sub">Music Concert</p>
+                <p class="desc">An unforgettable evening of music and melodies.</p>
+            </div>
+            <div class="eventMeta">
+                <div>25 May, 2024</div>
+                <div>Open Air Stage</div>
+            </div>
+            <button class="viewBtn">View Details</button>
+        </div>
+
+        <div class="eventCard" data-category="sports" data-name="sports day annual sports meet">
+            <div class="eventIcon">🏆</div>
+            <div class="eventInfo">
+                <h3>Sports Day</h3>
+                <p class="sub">Annual Sports Meet</p>
+                <p class="desc">Compete, challenge and win with your team.</p>
+            </div>
+            <div class="eventMeta">
+                <div>30 May, 2024</div>
+                <div>College Ground</div>
+            </div>
+            <button class="viewBtn">View Details</button>
+        </div>
+
+        <div class="eventCard" data-category="art" data-name="artopia art exhibition">
+            <div class="eventIcon">🎨</div>
+            <div class="eventInfo">
+                <h3>Artopia</h3>
+                <p class="sub">Art Exhibition</p>
+                <p class="desc">Explore creativity and colors in our art exhibition.</p>
+            </div>
+            <div class="eventMeta">
+                <div>02 June, 2024</div>
+                <div>Seminar Hall</div>
+            </div>
+            <button class="viewBtn">View Details</button>
+        </div>
+
+        <div class="eventCard" data-category="tech" data-name="hack overflow hackathon">
+            <div class="eventIcon">💻</div>
+            <div class="eventInfo">
+                <h3>Hack Overflow</h3>
+                <p class="sub">24-Hour Hackathon</p>
+                <p class="desc">Build innovative projects overnight with your team.</p>
+            </div>
+            <div class="eventMeta">
+                <div>06 June, 2024</div>
+                <div>Innovation Lab</div>
+            </div>
+            <button class="viewBtn">View Details</button>
+        </div>
+
+        <div class="noResults" id="noResults">No events match your search.</div>
+    </div>
+
+
+       <footer>
+        <div class="footer-container container">
+            <div class="footer-col branding">
+                <h3>CAMPUSFEST</h3>
+                <p>Uniting students through events and experiences.</p>
+            </div>
+            <div class="footer-col links">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col social">
+                <h4>FOLLOW US</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col contact">
+                <h4>CONTACT</h4>
+                <p>123 College Road, City</p>
+                <p>+91 12345 67890</p>
+                <p>info@campusfest.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CampusFest. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

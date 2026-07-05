@@ -1,0 +1,121 @@
+/* ===== Register Page Styles ===== */
+
+.registerHeading {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.registerHeading h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.registerHeading .underline {
+    width: 50px;
+    height: 3px;
+    background: #111;
+    margin: 0 auto 1rem;
+}
+
+.registerHeading p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.registerWrap {
+    max-width: 500px;
+    margin: 2.5rem auto 4rem;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.formGroup {
+    margin-bottom: 1.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #222;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+    font-family: inherit;
+    transition: border-color 0.25s;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+    border-color: #111;
+}
+
+.formGroup textarea {
+    resize: vertical;
+}
+
+.formGroup input.invalid,
+.formGroup select.invalid,
+.formGroup textarea.invalid {
+    border-color: #d13c3c;
+}
+
+.errorMsg {
+    color: #d13c3c;
+    font-size: 0.78rem;
+    margin-top: 4px;
+    min-height: 14px;
+    display: block;
+}
+
+.registerBtn {
+    width: 100%;
+    padding: 12px;
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.registerBtn:hover {
+    background: #333;
+}
+
+.successMsg {
+    display: none;
+    text-align: center;
+    color: #1a7d3a;
+    background: #e8f7ec;
+    border: 1px solid #b7e6c3;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.successMsg.show {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .registerWrap {
+        margin: 2rem 1rem 3rem;
+        padding: 1.5rem;
+    }
+}

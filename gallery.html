@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - CampusFest</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar container">
+            <div class="logo">
+                <i class="fa-solid fa-gothic-node"></i> CAMPUSFEST
+            </div>
+
+           
+            <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="mobileNav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="upcoming.html">Events</a></li>
+                    <li><a href="#"class="active">Gallery</a></li>
+                    <li><a href="register.html" >Register</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Dark background shown behind the mobile menu, closes it when tapped -->
+    <div class="navOverlay" id="navOverlay"></div>
+    <div class="galleryHeading">
+        <h1>Gallery</h1>
+        <div class="underline"></div>
+        <p>Moments from our past events.</p>
+    </div>
+
+    <div class="galleryTabs">
+        <button class="tabBtn active" data-category="all">All</button>
+        <button class="tabBtn" data-category="cultural">Cultural</button>
+        <button class="tabBtn" data-category="technical">Technical</button>
+        <button class="tabBtn" data-category="sports">Sports</button>
+    </div>
+
+   
+    <div class="galleryGrid" id="galleryGrid"></div>
+
+
+    <div class="lightboxOverlay" id="lightboxOverlay">
+        <button class="closeBtn" id="closeBtn">&times;</button>
+        <button class="navBtn prevBtn" id="prevBtn">&#8249;</button>
+        <img src="" alt="" class="lightboxImg" id="lightboxImg">
+        <button class="navBtn nextBtn" id="nextBtn">&#8250;</button>
+        <div class="lightboxCounter" id="lightboxCounter"></div>
+    </div>
+
+
+           <footer>
+        <div class="footer-container container">
+            <div class="footer-col branding">
+                <h3>CAMPUSFEST</h3>
+                <p>Uniting students through events and experiences.</p>
+            </div>
+            <div class="footer-col links">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col social">
+                <h4>FOLLOW US</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col contact">
+                <h4>CONTACT</h4>
+                <p>123 College Road, City</p>
+                <p>+91 12345 67890</p>
+                <p>info@campusfest.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CampusFest. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="gallery.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

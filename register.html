@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - CampusFest</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar container">
+            <div class="logo">
+                <i class="fa-solid fa-gothic-node"></i> CAMPUSFEST
+            </div>
+
+           
+            <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="mobileNav">
+                <ul class="nav-links">
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="upcoming.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#"class="active" >Register</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Dark background shown behind the mobile menu, closes it when tapped -->
+    <div class="navOverlay" id="navOverlay"></div>
+
+    <div class="registerHeading">
+        <h1>Register</h1>
+        <div class="underline"></div>
+        <p>Fill in the details to register for an event.</p>
+    </div>
+
+    <div class="registerWrap">
+        <form id="registerForm" novalidate>
+
+            <div class="formGroup">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+                <span class="errorMsg" id="fullNameError"></span>
+            </div>
+
+            <div class="formGroup">
+                <label for="email">Email Address</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email">
+                <span class="errorMsg" id="emailError"></span>
+            </div>
+
+            <div class="formGroup">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone number">
+                <span class="errorMsg" id="phoneError"></span>
+            </div>
+
+            <div class="formGroup">
+                <label for="department">Department</label>
+                <select id="department" name="department">
+                    <option value="">Select your department</option>
+                    <option value="cse">Computer Science</option>
+                    <option value="ece">Electronics</option>
+                    <option value="mech">Mechanical</option>
+                    <option value="civil">Civil</option>
+                    <option value="other">Other</option>
+                </select>
+                <span class="errorMsg" id="departmentError"></span>
+            </div>
+
+            <div class="formGroup">
+                <label for="event">Event</label>
+                <select id="event" name="event">
+                    <option value="">Select an event</option>
+                    <option value="code-warriors">Code Warriors</option>
+                    <option value="rhythm-night">Rhythm Night</option>
+                    <option value="sports-day">Sports Day</option>
+                    <option value="artopia">Artopia</option>
+                    <option value="hack-overflow">Hack Overflow</option>
+                </select>
+                <span class="errorMsg" id="eventError"></span>
+            </div>
+
+            <div class="formGroup">
+                <label for="message">Message (Optional)</label>
+                <textarea id="message" name="message" placeholder="Any message..." rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="registerBtn">Register Now</button>
+
+            <p class="successMsg" id="successMsg">You're registered! We'll see you at the event.</p>
+        </form>
+    </div>
+ <footer>
+        <div class="footer-container container">
+            <div class="footer-col branding">
+                <h3>CAMPUSFEST</h3>
+                <p>Uniting students through events and experiences.</p>
+            </div>
+            <div class="footer-col links">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col social">
+                <h4>FOLLOW US</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col contact">
+                <h4>CONTACT</h4>
+                <p>123 College Road, City</p>
+                <p>+91 12345 67890</p>
+                <p>info@campusfest.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CampusFest. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="register.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
