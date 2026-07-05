@@ -5,6 +5,8 @@
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+    padding: 0 1rem;
+    text-align: center;
 }
 .eventHeading .underline {
    width: 48px;
@@ -20,6 +22,7 @@
     gap: 1.5rem;
     margin-top: 2rem;
     flex-wrap: wrap;
+    padding: 0 1rem;
 }
 /* SEARCH BOX */
 .searchBar{
@@ -66,7 +69,7 @@
 }
 .searchBar .clearBtn.show{ display: block; }
 .searchBar .clearBtn:hover{ color: #111; background: transparent; }
- 
+
 
 .filterBar select{
     width: 180px;
@@ -83,7 +86,7 @@
 .filterBar select:hover{
     border-color: #999;
 }
- 
+
 
 .eventsWrap{
     max-width: 900px;
@@ -91,6 +94,7 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding: 0 1rem;
 }
 .eventCard{
     display: flex;
@@ -151,7 +155,7 @@
     white-space: nowrap;
 }
 .viewBtn:hover{ background: #333; }
- 
+
 .noResults{
     text-align: center;
     color: #999;
@@ -159,3 +163,71 @@
     display: none;
 }
 .noResults.show{ display: block; }
+
+
+/* ============================= */
+/* RESPONSIVE DESIGN             */
+/* ============================= */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .searchBar{
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .filterBar select{
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .eventCard{
+        flex-wrap: wrap;
+    }
+
+    .eventMeta{
+        min-width: 0;
+    }
+}
+
+/* Phones: stack each event card into a vertical layout */
+@media (max-width: 480px) {
+    .eventHeading h1{
+        font-size: 1.6rem;
+    }
+
+    .filter{
+        gap: 1rem;
+    }
+
+    .searchBar,
+    .filterBar select{
+        max-width: 100%;
+    }
+
+    .eventCard{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.6rem;
+        text-align: left;
+    }
+
+    .eventIcon{
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+    }
+
+    .eventMeta{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .viewBtn{
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+}
